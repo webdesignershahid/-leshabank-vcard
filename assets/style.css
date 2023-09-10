@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Tajawal';
+    margin: 0;
+    background-color: #eceff0;
+    padding: 30px 10px;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+p {
+ margin: 0;   
+}
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.card_wrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #eceff0;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+.card_wrapper .card_logo {
+    text-align: right;
+    padding: 20px;
+}
+
+.card_wrapper .card_logo img {
+    max-width: 120px;
+}
+.card_wrapper .user-information {
+    background-image: url(../assets/bg1.svg);
+    background-size: cover;
+    background-position: center right;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.card_wrapper .user-information h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #003764;
+}
+.card_wrapper .user-information p {
+    font-size: 12px;
+    color: #003764;
+    line-height: 1;
+    max-width: 80%;
+}
+.card_wrapper .user-information .contacts  {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    margin-top: 15px;
+}
+.card_wrapper .user-information .contacts li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    color: #003764;
+    font-weight: bold;
+    gap: 0 5px;
+}
+.card_wrapper .user-information .contacts li a span {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #ced3d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_wrapper .user-information .contacts li a span svg {
+    width: 12px;
+}
+.card_wrapper .user-information ul.buttons li {
+    margin-top: 5px;
+}
+.card_wrapper .user-information ul.buttons li a {
+    background-color: #003764;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0 6px;
+    font-size: 10px;
+}
+.card_wrapper .user-information .avatar {
+    transform: translateX(-35px);
+}
+.card_wrapper .user-information .user_avatar {
+    border-radius: 50%;
+    border: 1px solid #003764;
+    padding: 3px;
+    width: 90px;
+}
+@media (min-width: 410px) {
+    .card_wrapper .user-information .avatar {
+        transform: translateX(-10px);
+    }
+}
+@media (min-width: 450px) {
+    .card_wrapper .user-information .avatar {
+        transform: translateX(20px);
+    }
+}
+@media (min-width: 460px) {
+    .card_wrapper .user-information .avatar {
+        transform: translateX(-65px);
+    }
+}
+@media (min-width: 520px) {
+    .card_wrapper .user-information .user_avatar {
+        width: 115px;
+        padding: 5px;
+    }
+}
+@media (min-width: 560px) {
+    .card_wrapper .user-information .user_avatar {
+        width: 130px;
+        padding: 5px;
+    }
+    .card_wrapper .user-information .avatar {
+        transform: translateX(-50px);
+    }
+}
+@media (min-width: 580px) {
+    .card_wrapper .user-information .user_avatar {
+        width: 150px;
+    }
+}
+@media (min-width: 590px) {
+    .card_wrapper .user-information .user_avatar {
+        width: 180px;
+    }
+}
+.card_wrapper .contact_info {
+    padding: 20px;
+}
+.card_wrapper .contact_info li {
+    margin: 5px 0;
+}
+.card_wrapper .contact_info li a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #003764;
+    display: inline-flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.card_wrapper .contact_info li span {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_wrapper .contact_info .social_icons {
+    margin-top: 10px;
+}
+.card_wrapper .contact_info .social_icons a {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #093d60;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.card_wrapper .contact_info .social_icons a svg {
+    width: 12px;
+}
+
+
+.card_wrapper .corporate_profile {
+    background-color: #fff;
+    padding: 20px;
+}
+.card_wrapper .corporate_profile h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003764;
+}
+.card_wrapper .corporate_profile .line {
+    height: 2px;
+    width: 30px;
+    background-color: #003764;
+    margin: 10px 0;
+}
+.card_wrapper .corporate_profile .box {
+    margin-top: 20px;
+    user-select: none;
+}
+.card_wrapper .corporate_profile .box img {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.card_wrapper .corporate_profile .action_btn {
+    background-color: #003764;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0 10px;
+    height: 25px;
+    font-size: 12px;
+}
+.card_wrapper .corporate_profile .action_btn svg {
+    width: 12px;
+}
+
+.card_wrapper .about_us {
+    padding: 20px;
+    background-color: #003764;
+    color: #fff;
+}
+.card_wrapper .about_us h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.card_wrapper .about_us .line {
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+.card_wrapper .about_us p {
+    line-height: 1.5;
+    font-size: 13px;
+    
+}
+
+@media (min-width: 460px) {
+    .card_wrapper .card_logo {
+        padding: 40px;
+    }
+    
+    .card_wrapper .card_logo img {
+        max-width: 230px;
+    }
+    .card_wrapper .user-information {
+        padding: 40px;
+    }
+    .card_wrapper .user-information h2 {
+        font-size: 20px;
+    }
+    .card_wrapper .user-information p {
+        font-size: 18px;
+    }
+    .card_wrapper .user-information .contacts  {
+        gap: 0 14px;
+    }
+    .card_wrapper .user-information .contacts li a {
+        font-size: 14px;
+    }
+    .card_wrapper .user-information .contacts li a span {
+        width: 30px;
+        height: 30px;
+    }
+    .card_wrapper .user-information .contacts li a span svg {
+        width: 16px;
+    }
+    .card_wrapper .user-information ul.buttons li a {
+        gap: 0 10px;
+        font-size: 16px;
+    }
+    .card_wrapper .user-information ul.buttons li {
+        margin-top: 10px;
+    }
+    .card_wrapper .contact_info {
+        padding: 40px;
+    }
+    .card_wrapper .contact_info li {
+        margin: 10px 0;
+    }
+    .card_wrapper .contact_info li a {
+        font-size: 17px;
+    }
+    .card_wrapper .contact_info li span {
+        width: 30px;
+        height: 30px;
+    }
+    .card_wrapper .contact_info .social_icons {
+        margin-top: 20px;
+    }
+    .card_wrapper .contact_info .social_icons a {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .card_wrapper .contact_info .social_icons a svg {
+        width: 16px;
+    }
+    .card_wrapper .corporate_profile {
+        padding: 40px;
+    }
+    .card_wrapper .corporate_profile h1 {
+        font-size: 20px;
+    }
+    
+    .card_wrapper .corporate_profile .action_btn {
+        height: 35px;
+        font-size: 16px;
+    }
+    .card_wrapper .corporate_profile .action_btn svg {
+        width: 16px;
+    }
+    .card_wrapper .about_us {
+        padding: 40px;
+    }
+    .card_wrapper .about_us h1 {
+        font-size: 20px;
+    }
+    .card_wrapper .about_us p {
+        font-size: 16px;        
+    }
+}
